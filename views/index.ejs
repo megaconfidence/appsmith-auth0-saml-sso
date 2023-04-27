@@ -5,7 +5,8 @@
 <% if (locals.isAuthenticated) { %>
     <p>You are logged in. <a href="/profile" class="underline">View your profile</a>.</p>
 
-    <iframe src="https://appsmith.fun/app/embedded-website/page1-644a613bb70e872f6503c892" height="700" width="100%"></iframe>
+    <iframe
+    src="https://appsmith.fun/app/embedded-website/page1-644a613bb70e872f6503c892?ssoTrigger=saml" height="700" width="100%"></iframe>
 <% } else { %>
     <p>You are not logged in. <a href="/login" class="underline">Login</a>.</p>
 <% } %>
