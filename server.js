@@ -23,14 +23,16 @@ const config = {
 };
 
 const port = process.env.PORT || 3000;
-config.baseURL = `http://127.0.0.1:${port}`;
 if (
   !config.baseURL &&
   !process.env.BASE_URL &&
   process.env.PORT &&
   process.env.NODE_ENV !== "production"
 ) {
-  // config.baseURL = `http://localhost:${port}`;
+  config.baseURL = `http://localhost:${port}`;
+} else {
+  // config.baseURL = `http://127.0.0.1:${port}`;
+  config.baseURL = process.env.BASE_URL;
 }
 
 app.use(auth(config));
