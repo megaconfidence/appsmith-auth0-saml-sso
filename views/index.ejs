@@ -1,12 +1,12 @@
 <%- include('partials/header') -%>
 
-<h1 class="text-4xl">Hello Appsmith v1</h1>
+<h1 class="text-4xl">Welcome to Appsmith</h1>
 
 <% if (locals.isAuthenticated) { %>
     <p>You are logged in. <a href="/profile" class="underline">View your profile</a>.</p>
 
     <iframe
-    src="https://appsmith.fun/app/app-1/page1-6461fa99dd5ca6192fd7e5e9?embed=true&ssoTrigger=oidc" height="700" width="100%"></iframe>
+    src="https://appsmith.fun/app/private-app/page1-646f4065f79e8c4a993b20b3?embed=true&ssoTrigger=oidc" height="700" width="100%"></iframe>
 <% } else { %>
     <p>You are not logged in. <a href="/login" class="underline">Login</a>.</p>
 <% } %>
